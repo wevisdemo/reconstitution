@@ -43,7 +43,6 @@ export default {
     '~/plugins/msw.server.ts',
     '~/plugins/msw.client.ts',
     '~/plugins/v-click-outside.ts',
-    '~/plugins/vue-gtag.ts',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -67,7 +66,12 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['vue-plausible'],
+
+  plausible: {
+    domain: process.env.SITE_URL,
+    apiHost: 'https://analytics.punchup.world/',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

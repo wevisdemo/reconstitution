@@ -15,7 +15,6 @@ Thailand's Constitution, explained
 STRAPI_ENDPOINT=<url_to_strapi>
 BASE_PATH=<site_path_when_deploy>
 SITE_URL=<site_url_when_deploy>
-GOOGLE_ANALYTICS_ID=<G-XXXXXXX>
 ```
 
 ## Build Setup

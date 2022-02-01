@@ -8087,6 +8087,11 @@ pkg-dir@^5.0.0:
   dependencies:
     find-up "^5.0.0"
 
+plausible-tracker@^0.3.4:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/plausible-tracker/-/plausible-tracker-0.3.5.tgz#49c09a7eb727f1d5c859c3fc8072837b13ee9b85"
+  integrity sha512-6c6VPdPtI9KmIsfr8zLBViIDMt369eeaNA1J8JrAmAtrpSkeJWvjwcJ+cLn7gVJn5AtQWC8NgSEee2d/5RNytA==
+
 please-upgrade-node@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/please-upgrade-node/-/please-upgrade-node-3.2.0.tgz#aeddd3f994c933e4ad98b99d9a556efa0e2fe942"
@@ -10943,11 +10948,6 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.6.0:
     esquery "^1.4.0"
     lodash "^4.17.15"
 
-vue-gtag@^1.10.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/vue-gtag/-/vue-gtag-1.11.0.tgz#4c1eedfa6db7d5c0945a535198e460f105f94b10"
-  integrity sha512-tIieh6aZoB/METabJlEHJ3e/SwHpR5ysK6tW1lzsG8NSrI7HUpy/Wf5tVdq1AHAHV6Pr8aK99g63rC5iDzf0TA==
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -10999,6 +10999,13 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
+
+vue-plausible@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/vue-plausible/-/vue-plausible-1.3.1.tgz#c8d5906566433c7f5a0a27878745f355eccf9172"
+  integrity sha512-OqZiScz/7glitE4XSJTwGUHO31VEbba2efmLki0+rIGDx3NysSOBJMyFz6yBFPWKms4jb1lDmx1wCsbAl7mrtA==
+  dependencies:
+    plausible-tracker "^0.3.4"
 
 vue-router@^3.5.1:
   version "3.5.1"

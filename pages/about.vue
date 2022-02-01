@@ -199,17 +199,19 @@
       >
     </section>
 
-    <section class="flex justify-center">
-      <elect-sharer />
-    </section>
+    <WvSharer center />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import { generateHeadTags } from '~/utils/head';
 
 export default Vue.extend({
+  components: {
+    WvSharer,
+  },
   head: generateHeadTags({
     title: 'เกี่ยวกับโครงการ',
   }),

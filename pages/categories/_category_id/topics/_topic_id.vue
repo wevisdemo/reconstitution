@@ -49,8 +49,8 @@
 
       <TopicOpinions v-else :opinions="topic.opinions" />
 
-      <div class="flex justify-center my-6 md:my-12">
-        <elect-sharer />
+      <div class="my-6 md:my-12">
+        <WvSharer center />
       </div>
 
       <hr
@@ -70,10 +70,14 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import { getCategoryById, Topic, Category, getTopicById } from '@/utils/strapi';
 import { generateHeadTags } from '~/utils/head';
 
 export default Vue.extend({
+  components: {
+    WvSharer,
+  },
   async asyncData({ params: { category_id, topic_id }, payload }) {
     if (payload?.topic && payload?.category) {
       return payload;

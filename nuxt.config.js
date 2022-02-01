@@ -31,7 +31,12 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~/assets/fonts/typography.css', '~/assets/styles/global.css'],
+  css: [
+    '~/assets/fonts/typography.css',
+    '@wevisdemo/ui/styles/typography.css',
+    '@wevisdemo/ui/styles/components.css',
+    '~/assets/styles/global.css',
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -39,7 +44,6 @@ export default {
     '~/plugins/msw.client.ts',
     '~/plugins/v-click-outside.ts',
     '~/plugins/vue-gtag.ts',
-    '~/plugins/common.client.ts',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

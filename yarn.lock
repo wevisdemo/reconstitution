@@ -891,11 +891,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@electinth/common@^2.0.0":
-  version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@electinth/common/2.0.0/cb6b5ee4ecd2c615d05bf74035acff426f8c065b129631ca27b5086c05ac7fc1#245f833d8f016172ad5b21c373057fab5d3f08a2"
-  integrity sha512-z1HLLxnn2ppxpssA06MH8mGBXxplMCC0eb1mLrgYuMYoWYg5ExTZA7X4onoVB2eJ33q3YYTVl0IFh+HVOobKkw==
-
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.0.tgz#99cc0a0584d72f1df38b900fb062ba995f395547"
@@ -2088,6 +2083,11 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@wevisdemo/ui@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@wevisdemo/ui/-/ui-1.0.1.tgz#e70c63710401e6e95e07ef6aa1d13886ef4c5cbc"
+  integrity sha512-LvqhCUtdsCnMOQ578+8QM3Bb5VBz/GSzY4bX3diwzUaCPZZzyP79yEGzXh7/0cIX27mFtGqHBSlHrplpGAhZaQ==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"

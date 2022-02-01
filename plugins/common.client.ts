@@ -1,1 +1,0 @@
-import '@electinth/common';

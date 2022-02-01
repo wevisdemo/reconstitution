@@ -38,17 +38,19 @@
     </section>
     <!-- End of Sub-categories -->
 
-    <section class="flex justify-center">
-      <elect-sharer />
-    </section>
+    <WvSharer center />
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue';
+import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import { generateHeadTags } from '~/utils/head';
 import { Category, getCategoryById } from '~/utils/strapi';
 
 export default Vue.extend({
+  components: {
+    WvSharer,
+  },
   async asyncData({ params: { category_id }, payload }) {
     if (payload?.category) {
       return payload;

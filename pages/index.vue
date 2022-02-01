@@ -51,15 +51,15 @@
           class="flex-1"
         />
       </section>
-      <section class="flex justify-center">
-        <elect-sharer light />
-      </section>
+
+      <WvSharer light center />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import constitutionOverview from '~/data/constitution-overview';
 import { getAllTopics } from '~/utils/strapi';
 
@@ -88,6 +88,9 @@ const howtoSteps: HowtoStep[] = [
 ];
 
 export default Vue.extend({
+  components: {
+    WvSharer,
+  },
   async asyncData() {
     const topics = await getAllTopics();
 

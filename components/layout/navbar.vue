@@ -1,35 +1,47 @@
 <template>
-  <WvNavbar title="RE-CONSTITUTION">
-    <NuxtLink to="/">
-      <WvNavButton>ภาพรวม</WvNavButton>
-    </NuxtLink>
-    <WvNavDropdown label="ดูตามหมวด">
-      <NuxtLink
-        v-for="category in categories"
-        :key="category.id"
-        :to="`/categories/${category.id}`"
-        class="w-full"
-      >
-        <WvNavDropdownItem>
-          <div class="flex flex-row items-center space-x-1">
-            <div
-              class="rounded-full w-2 h-2 md:w-3 md:h-3"
-              :style="{ backgroundColor: category.color }"
-            />
-            <span class="wv_b7">
-              {{ category.title }}
-            </span>
-          </div>
-        </WvNavDropdownItem>
+  <div>
+    <WvNavbar title="RE-CONSTITUTION">
+      <NuxtLink to="/">
+        <WvNavButton>ภาพรวม</WvNavButton>
       </NuxtLink>
-    </WvNavDropdown>
-    <NuxtLink to="/about">
-      <WvNavButton>เกี่ยวกับโครงการ</WvNavButton>
-    </NuxtLink>
-    <WvNavButton>
-      <img src="~/assets/images/icon-search.svg" alt="search" />
-    </WvNavButton>
-  </WvNavbar>
+      <WvNavDropdown label="ดูตามหมวด">
+        <NuxtLink
+          v-for="category in categories"
+          :key="category.id"
+          :to="`/categories/${category.id}`"
+          class="w-full"
+        >
+          <WvNavDropdownItem>
+            <div class="flex flex-row items-center space-x-2">
+              <div
+                class="rounded-full w-3 h-3"
+                :style="{ backgroundColor: category.color }"
+              />
+              <span class="wv_b7">
+                {{ category.title }}
+              </span>
+            </div>
+          </WvNavDropdownItem>
+        </NuxtLink>
+      </WvNavDropdown>
+      <NuxtLink to="/about">
+        <WvNavButton>เกี่ยวกับโครงการ</WvNavButton>
+      </NuxtLink>
+      <WvNavButton :on-click="() => (showSearchBar = true)">
+        <img src="~/assets/images/icon-search.svg" alt="search" />
+      </WvNavButton>
+    </WvNavbar>
+
+    <div
+      v-if="showSearchBar"
+      class="fixed top-0 z-50 h-screen w-full bg-black bg-opacity-75 pt-48 px-3"
+    >
+      <SearchBar
+        :topics-index="topicsIndex"
+        @close="showSearchBar && (showSearchBar = false)"
+      />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">

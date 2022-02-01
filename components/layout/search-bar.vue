@@ -1,7 +1,7 @@
 <template>
   <div
     v-click-outside="() => $emit('close')"
-    class="flex flex-col w-full bg-light-gray-1 font-heading leading-1.2 text-18 md:text-21 lg:text-24"
+    class="flex flex-col w-full bg-light-gray-1 font-heading leading-1.2 text-18 md:text-21 lg:text-24 max-w-xl mx-auto shadow-xl"
   >
     <!-- Input row -->
     <div class="flex flex-row">

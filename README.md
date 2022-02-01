@@ -13,6 +13,7 @@ Thailand's Constitution, explained
 
 ```
 STRAPI_ENDPOINT=<url_to_strapi>
+STRAPI_TOKEN=<strapi_secret_token>
 BASE_PATH=<site_path_when_deploy>
 SITE_URL=<site_url_when_deploy>
 ```

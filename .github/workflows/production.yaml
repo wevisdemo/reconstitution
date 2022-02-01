@@ -23,11 +23,11 @@ jobs:
       - name: Build project
         run: npm run generate
         env:
-          SITE_URL: https://recon.elect.in.th
+          SITE_URL: https://reconstitution.wevis.info
           STRAPI_ENDPOINT: https://cms.constitution.kickdown.dev
           STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN }}
           GOOGLE_ANALYTICS_ID: G-2F9Q3DF245
-      - name: Deploy to ELECT Server
+      - name: Deploy to WeVis Server
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: -avzP

@@ -4,8 +4,8 @@ Thailand's Constitution, explained
 
 ## Deployment
 
-- Staging: https://electinth.github.io/constitution/
-- Production: https://recon.elect.in.th/
+- Staging: https://wevisdemo.github.io/reconstitution
+- Production: https://reconstitution.wevis.info
 
 ## Environment
 

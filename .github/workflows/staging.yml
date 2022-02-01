@@ -19,7 +19,7 @@ jobs:
         run: npm run generate
         env:
           BASE_PATH: /constitution
-          SITE_URL: https://electinth.github.io/constitution
+          SITE_URL: https://wevisdemo.github.io/reconstitution
           STRAPI_ENDPOINT: https://cms.constitution.kickdown.dev
           STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN }}
       - name: Include JSONs data in deployment

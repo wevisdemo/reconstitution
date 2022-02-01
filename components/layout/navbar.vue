@@ -1,6 +1,6 @@
 <template>
   <div>
-    <WvNavbar title="RE-CONSTITUTION">
+    <WvNavbar title="RE-CONSTITUTION" logo-addon-src="/wevis-recon.png">
       <NuxtLink to="/">
         <WvNavButton>ภาพรวม</WvNavButton>
       </NuxtLink>

@@ -69,7 +69,7 @@ export default {
   modules: ['vue-plausible'],
 
   plausible: {
-    domain: process.env.SITE_URL,
+    domain: 'reconstitution.wevis.info',
     apiHost: 'https://analytics.punchup.world',
   },
 

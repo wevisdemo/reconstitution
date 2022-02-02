@@ -1,6 +1,10 @@
 <template>
   <div>
-    <WvNavbar title="RE-CONSTITUTION" logo-addon-src="/wevis-recon.png">
+    <WvNavbar
+      title="RE-CONSTITUTION"
+      :home-href="basePath"
+      :logo-addon-src="require('../../assets/images/wevis-recon.png')"
+    >
       <NuxtLink to="/">
         <WvNavButton>ภาพรวม</WvNavButton>
       </NuxtLink>
@@ -73,6 +77,7 @@ export default Vue.extend({
       showSearchBar: false,
       categories: [] as CategoryOverview[],
       topicsIndex: [] as TopicIndex[],
+      basePath: process.env.BASE_PATH,
     };
   },
   async fetch() {

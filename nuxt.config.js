@@ -82,7 +82,7 @@ export default {
     STRAPI_ENDPOINT: process.env.STRAPI_ENDPOINT,
     STRAPI_TOKEN: process.env.STRAPI_TOKEN,
     SITE_URL: process.env.SITE_URL,
-    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+    BASE_PATH: process.env.BASE_PATH,
   },
 
   router: {

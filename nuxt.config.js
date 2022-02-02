@@ -70,7 +70,7 @@ export default {
 
   plausible: {
     domain: process.env.SITE_URL,
-    apiHost: 'https://analytics.punchup.world/',
+    apiHost: 'https://analytics.punchup.world',
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

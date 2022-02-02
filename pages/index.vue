@@ -59,6 +59,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
 import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import constitutionOverview from '~/data/constitution-overview';
 import { getAllTopics } from '~/utils/strapi';

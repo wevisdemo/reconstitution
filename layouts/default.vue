@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
 import WvFooter from '@wevisdemo/ui/components/footer.vue';
 
 export default Vue.extend({

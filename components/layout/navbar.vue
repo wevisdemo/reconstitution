@@ -46,9 +46,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
 import WvNavbar from '@wevisdemo/ui/components/navbar.vue';
+// @ts-ignore
 import WvNavButton from '@wevisdemo/ui/components/nav-button.vue';
+// @ts-ignore
 import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.vue';
+// @ts-ignore
 import WvNavDropdownItem from '@wevisdemo/ui/components/nav-dropdown-item.vue';
 
 import { TopicIndex } from './search-bar.vue';

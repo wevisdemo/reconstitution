@@ -70,6 +70,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
 import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import { getCategoryById, Topic, Category, getTopicById } from '@/utils/strapi';
 import { generateHeadTags } from '~/utils/head';

@@ -43,6 +43,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
+// @ts-ignore
 import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 import { generateHeadTags } from '~/utils/head';
 import { Category, getCategoryById } from '~/utils/strapi';

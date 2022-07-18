@@ -109,31 +109,26 @@ export default {
         }))
       );
 
-      const topicRoutes = (await getAllTopics()).reduce((list, topic) => {
+      const topicRoutes = (await getAllTopics()).map((topic) => {
         const { category } =
           categoryRoutes.find(
             ({ payload }) => payload.category.category_id === topic.category_id
           )?.payload || {};
 
         if (!category) {
-          console.warn(
-            `category id: ${topic.category_id} not found on topic ${topic.name} -> skipped`
+          throw new Error(
+            `category id: ${topic.category_id} not found on topic ${topic.name}`
           );
         }
 
-        return category
-          ? [
-              ...list,
-              {
-                route: `/categories/${category.category_id}/topics/${topic.id}`,
-                payload: {
-                  category,
-                  topic,
-                },
-              },
-            ]
-          : list;
-      }, []);
+        return {
+          route: `/categories/${category.category_id}/topics/${topic.id}`,
+          payload: {
+            category,
+            topic,
+          },
+        };
+      });
 
       if (!process.env.STRAPI_ENDPOINT) {
         server.close();

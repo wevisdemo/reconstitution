@@ -11,7 +11,7 @@
       <Paragraph2 class="flex-1">
         <span class="font-semibold"> Update Announcement</span><br />
         มีการเพิ่มเติมเนื้อหาบทบัญญัติรัฐธรรมนูญอีก 2 หมวดหลัก (อัพเดตรายละเอียด
-        ณ วันที่ 04/03/2565)
+        ณ วันที่ 18/07/2565)
       </Paragraph2>
     </div>
     <div class="w-3 md:w-4">

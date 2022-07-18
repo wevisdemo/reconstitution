@@ -109,22 +109,31 @@ export default {
         }))
       );
 
-      const topicRoutes = (await getAllTopics()).map((topic) => {
+      const topicRoutes = (await getAllTopics()).reduce((list, topic) => {
         const { category } =
           categoryRoutes.find(
             ({ payload }) => payload.category.category_id === topic.category_id
           )?.payload || {};
 
+        if (!category) {
+          console.warn(
+            `category id: ${topic.category_id} not found on topic ${topic.name} -> skipped`
+          );
+        }
+
         return category
-          ? {
-              route: `/categories/${category.category_id}/topics/${topic.id}`,
-              payload: {
-                category,
-                topic,
+          ? [
+              ...list,
+              {
+                route: `/categories/${category.category_id}/topics/${topic.id}`,
+                payload: {
+                  category,
+                  topic,
+                },
               },
-            }
-          : null;
-      });
+            ]
+          : list;
+      }, []);
 
       if (!process.env.STRAPI_ENDPOINT) {
         server.close();

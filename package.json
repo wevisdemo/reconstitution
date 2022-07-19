@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate && rm dist/mockServiceWorker.js",
+    "build": "sh populate-data.sh && npm run generate",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
